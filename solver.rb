@@ -1,7 +1,7 @@
 class Solver
   def self.factorial(num)
     f = 1
-    for i in 1..num
+    (1..num).each do |i|
       f *= i
     end
     f
@@ -12,12 +12,12 @@ class Solver
   end
 
   def self.fizzbuzz(num)
-    if num % 3 == 0 && num % 5 == 0
-      "fizzbuzz" 
-    elsif num % 5 == 0
-      "buzz"
-    elsif num % 3 == 0
-      "fizz"
+    if (num % 3).zero? && (num % 5).zero?
+      'fizzbuzz'
+    elsif (num % 5).zero?
+      'buzz'
+    elsif (num % 3).zero?
+      'fizz'
     else
       num.to_s
     end

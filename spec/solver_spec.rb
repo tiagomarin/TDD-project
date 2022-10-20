@@ -1,23 +1,23 @@
 require_relative '../solver'
 
-# describe 'factorial method' do
-#   it 'returns the correct factorial' do
-#     expect(Solver.factorial(0)).to eq(1)
-#     expect(Solver.factorial(1)).to eq(1)
-#     expect(Solver.factorial(2)).to eq(2)
-#     expect(Solver.factorial(3)).to eq(6)
-#     expect(Solver.factorial(6)).to eq(720)
-#   end
-# end
+describe 'factorial method' do
+  it 'returns the correct factorial' do
+    expect(Solver.factorial(0)).to eq(1)
+    expect(Solver.factorial(1)).to eq(1)
+    expect(Solver.factorial(2)).to eq(2)
+    expect(Solver.factorial(3)).to eq(6)
+    expect(Solver.factorial(6)).to eq(720)
+  end
+end
 
-# describe 'reverse method' do
-#   it 'returns reversed string correctly' do
-#     expect(Solver.reverse('hello')).to eq('olleh')
-#     expect(Solver.reverse('Howdy')).to eq('ydwoH')
-#     expect(Solver.reverse('traxart')).to eq('traxart')
-#     expect(Solver.reverse('Greetings from Earth')).to eq('htraE morf sgniteerG')
-#   end
-# end
+describe 'reverse method' do
+  it 'returns reversed string correctly' do
+    expect(Solver.reverse('hello')).to eq('olleh')
+    expect(Solver.reverse('Howdy')).to eq('ydwoH')
+    expect(Solver.reverse('traxart')).to eq('traxart')
+    expect(Solver.reverse('Greetings from Earth')).to eq('htraE morf sgniteerG')
+  end
+end
 
 describe 'fizzbuzz method' do
   it "Returns 'fizz' when N is divisible by 3" do
